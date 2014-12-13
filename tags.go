@@ -95,6 +95,7 @@ func (p *Parser) parseTagElement() (INodeTag, *Error) {
 	}
 
 	// Check for the existing tag
+	fmt.Println(token_name.Val)
 	tag, exists := tags[token_name.Val]
 	if !exists {
 		// Does not exists
