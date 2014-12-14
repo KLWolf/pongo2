@@ -99,7 +99,7 @@ func (p *Parser) parseTagElement() (INodeTag, *Error) {
 	tag, exists := tags[token_name.Val]
 	if !exists {
 		// Does not exists
-		return nil, p.Error(fmt.Sprintf("Tag '%s' not found (or beginning tag not provided)", token_name.Val), token_name)
+		return nil, p.Error(fmt.Sprintf("MyWord: Tag '%s' not found (or beginning tag not provided)", token_name.Val), token_name)
 	}
 
 	// Check sandbox tag restriction
